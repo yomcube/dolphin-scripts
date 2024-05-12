@@ -5,6 +5,6 @@ To use Python scripts, put the scripts in a directory with the game's ID, as sho
 ```
 Scripts/
 └───SMN/
-    ├───NSMBW_InfoDisplay.py
+    ├───InfoDisplay.py
     └───...
 ```
