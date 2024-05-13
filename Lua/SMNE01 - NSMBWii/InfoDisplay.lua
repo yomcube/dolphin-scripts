@@ -42,8 +42,8 @@ function onScriptUpdate()
     text = text .. string.format('\nStar Timer    : %.0f', ReadValue32(p1 + 0x1070))
     text = text .. string.format('\nStored Jump   : %.0f', ReadValue32(p1 + 0x1564))
 
-  text = text .. '\n\n--     RNG     --'
-  text = text .. '\nRNG Value     : ' .. string.upper(string.format('%x', rng))
+    text = text .. '\n\n--     RNG     --'
+    text = text .. '\nRNG Value     : ' .. string.upper(string.format('%x', rng))
 
-  SetScreenText(text)
+    SetScreenText(text)
 end
