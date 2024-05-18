@@ -18,7 +18,7 @@ function onScriptUpdate()
     else
         if region == 0x4A then -- J
             rng = ReadValue32(0x80429C64)
-	    else -- Other region
+	else -- Other region
             rng = -1
         end
     end
