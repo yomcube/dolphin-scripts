@@ -9,7 +9,7 @@ function onScriptCancel()
 end
 
 function onScriptUpdate()
-    local savefile = ReadValue8(0x80C7F7C6)
+	local savefile = ReadValue8(0x80C7F7C6)
 	local base = 0x80C7FE69 + (savefile * 0x980)
 	local text = ''
 	
@@ -22,5 +22,5 @@ function onScriptUpdate()
 	text = text .. string.format("\nMini Mushrooms : %d", ReadValue8(base + 5))
 	text = text .. string.format("\nStars          : %d", ReadValue8(base + 6))
 	
-    SetScreenText(text)
+	SetScreenText(text)
 end
